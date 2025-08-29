@@ -1,15 +1,15 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work, Certificates } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Jittiphat",
   lastName: "Somsai",
   name: `Jittiphat Somsai`,
-  role: "Student / Drummer / Website Developer / Frontend Developer",
+  role: "Student / Drummer / Frontend Developer",
   avatar: "/images/avatar.jpg",
   email: "Jittiphat@jittiphat.space",
   location: "Asia/Bangkok", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Thailand", "Nakhon Ratchasima"], // optional: Leave the array empty if you don't want to display languages
+  address: ["Thailand", "Nakhon Ratchasima"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -192,6 +192,15 @@ const work: Work = {
   // All projects will be listed on the /home and /work routes
 };
 
+const certificates: Certificates = {
+  path: "/certificates",
+  label: "Certificates",
+  title: `Certificates – ${person.name}`,
+  description: `Certificates earned by ${person.name}`,
+  // Create new certificate pages by adding a new .mdx file to app/blog/posts
+  // All certificates will be listed on the /home and /certificates routes
+};
+
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
@@ -243,4 +252,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, certificates, gallery };

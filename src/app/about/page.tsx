@@ -13,7 +13,6 @@ import {
   Row,
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
-import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 import LenisComponent from "@/resources/LenisComponent";
@@ -84,11 +83,11 @@ export default function About() {
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}
             </Row>
-            {person.languages && person.languages.length > 0 && (
+            {person.address && person.address.length > 0 && (
               <Row wrap gap="8">
-                {person.languages.map((language, index) => (
+                {person.address.map((address, index) => (
                   <Tag key={index} size="l">
-                    {language}
+                    {address}
                   </Tag>
                 ))}
               </Row>

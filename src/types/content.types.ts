@@ -25,8 +25,8 @@ export type Person = {
   email: string;
   /** IANA time zone location */
   location: IANATimeZone;
-  /** Languages spoken */
-  languages?: string[];
+  /** Address */
+  address?: string[];
 };
 
 /**
@@ -218,6 +218,12 @@ export interface Blog extends BasePageConfig {}
  * @description Configuration for the Work/Projects page, including metadata and navigation label.
  */
 export interface Work extends BasePageConfig {}
+
+/**
+ * Certificate page configuration.
+ * @description Configuration for the Certificate page, including metadata and navigation label.
+ */
+export interface Certificates extends BasePageConfig {}
 
 /**
  * Gallery page configuration.
