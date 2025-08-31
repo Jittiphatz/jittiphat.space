@@ -108,8 +108,8 @@ export async function GET(request: Request) {
       height: 720,
       fonts: [
         {
-          name: "IBM_Plex_Sans_Thai",
-          data: await loadGoogleFont("IBM_Plex_Sans_Thai:wght@400"),
+          name: "Anuphan",
+          data: await loadGoogleFont("Anuphan:wght@400"),
           style: "normal",
         },
       ],
