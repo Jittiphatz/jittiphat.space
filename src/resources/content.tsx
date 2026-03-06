@@ -29,7 +29,7 @@ const social: Social = [
   {
     name: "Instagram",
     icon: "ig",
-    link: "https://www.instagram.com/mannez_xyz/",
+    link: "https://www.instagram.com/jzxsddb/",
   },
   {
     name: "GitHub",
@@ -133,6 +133,28 @@ const about: About = {
       {
         name: "ระดับมัธยมศึกษา",
         description: <>โรงเรียนบุญวัฒนา</>,
+      },
+    ],
+  },
+  device: {
+    display: true, // set to false to hide this section
+    title: "My Devices",
+    device: [
+      {
+        title: "PC",
+        description: <>Acer Aspire TC-1660 | Intel Core i3-10105 , Windows 10</>,
+      },
+      {
+        title: "Laptop",
+        description: <>MacBook Air 13” M4 (2025) | MacOS Tahoe</>,
+      },
+      {
+        title: "Phone",
+        description: <>iPhone 13 128GB | A15 Bionic iOS 18</>,
+      },
+      {
+        title: "Notebook (To test something)",
+        description: <>Lenovo IdeaPad G485 | AMD E1-1200 , Windows 7</>,
       },
     ],
   },

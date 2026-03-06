@@ -75,7 +75,7 @@ const fonts: FontsConfig = {
 
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
-  theme: "system", // dark | light | system
+  theme: "dark", // dark | light | system
   neutral: "gray", // sand | gray | slate | custom
   brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
@@ -103,10 +103,10 @@ const dataStyle: DataStyleConfig = {
 
 const effects: EffectsConfig = {
   mask: {
-    cursor: true,
+    cursor: false,
     x: 50,
     y: 0,
-    radius: 100,
+    radius: 150,
   },
   gradient: {
     display: false,
@@ -126,7 +126,7 @@ const effects: EffectsConfig = {
     color: "brand-background-strong",
   },
   grid: {
-    display: false,
+    display: true,
     opacity: 100,
     color: "neutral-alpha-medium",
     width: "10rem",

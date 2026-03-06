@@ -161,6 +161,30 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
+
+  device: {
+    /** Whether to display work experience */
+    display: boolean;
+    /** Title for the work experience section */
+    title: string;
+    /** List of work experiences */
+    device: Array<{
+      /** Company name */
+      title: string;
+      description?: string | React.ReactNode;
+      /** Images related to the experience */
+      images?: Array<{
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      }>;
+    }>;
+  };
   /** Studies/education section */
   studies: {
     /** Whether to display studies section */

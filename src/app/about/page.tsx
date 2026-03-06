@@ -242,8 +242,28 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    <Text variant="heading-default-xs" onBackground="brand-weak">
                       {institution.description}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.device.display && (
+            <>
+              <Heading as="h2" id={about.device.title} variant="display-strong-s" marginBottom="m">
+                {about.device.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.device.device.map((device, index) => (
+                  <Column key={`${device.title}-${index}`} fillWidth gap="4">
+                    <Text id={device.title} variant="heading-strong-l">
+                      {device.title}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="brand-weak">
+                      {device.description}
                     </Text>
                   </Column>
                 ))}
