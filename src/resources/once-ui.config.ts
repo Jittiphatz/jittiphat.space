@@ -12,7 +12,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://jittiphat.space";
+const baseURL: string = "https://jittiphat.me";
 
 const routes: RoutesConfig = {
   "/": true,

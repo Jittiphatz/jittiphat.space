@@ -1,6 +1,6 @@
 # **My Website | Next.JS + Tailwind CSS + Once-Ui + Lenis**
 
-View the [demo here](https://jittiphat.space).
+View the [demo here](https://jittiphat.me).
 
 ![Portfolio](public/images/og/home.png)
 

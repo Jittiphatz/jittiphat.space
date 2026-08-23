@@ -7,7 +7,7 @@ const person: Person = {
   name: `Jittiphat Somsai`,
   role: "Student / Drummer / Frontend Developer",
   avatar: "/images/avatar.jpg",
-  email: "Jittiphat@jittiphat.space",
+  email: "Jittiphat@jittiphat.me",
   location: "Asia/Bangkok", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   address: ["Thailand", "Nakhon Ratchasima"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -66,7 +66,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "https://thai-massage-have-a-nice-day.shop",
+    href: "https://thai-massage-web.vercel.app/",
   },
   subline: (
     <>
@@ -90,7 +90,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "mailto:Jittiphat@jittiphat.space",
+    link: "mailto:Jittiphat@jittiphat.me",
   },
   intro: {
     display: true,
@@ -228,8 +228,6 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/img-01.jpg",
